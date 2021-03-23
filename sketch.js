@@ -2,6 +2,7 @@ var canvas;
 var music;
 var b1, b2, b3, b4;
 var ball;
+var edges;
 
 function preload()
 {
@@ -34,7 +35,8 @@ function draw()
 {
     background(rgb(169,169,169));
     //create edgeSprite
-
+    edges = createEdgeSprites();
+    ball.bounceOff(edges);
 
 
 
